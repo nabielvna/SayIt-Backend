@@ -14,6 +14,7 @@ const EnvSchema = z.object({
   CLERK_SECRET_KEY: z.string(),
   CLERK_WEBHOOK_SIGNING_SECRET: z.string(),
   GEMINI_API_KEY: z.string(),
+  ALLOWED_ORIGINS: z.string().optional(),
 });
 
 export type env = z.infer<typeof EnvSchema>;
