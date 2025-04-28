@@ -68,7 +68,7 @@ GEMINI_API_KEY=your_gemini_api_key
 
    ```bash
    git clone https://github.com/nabielvna/SayIt-Backend.git
-   cd sayit-api
+   cd SayIt-Backend
    ```
 
 2. Install dependencies:
