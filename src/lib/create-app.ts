@@ -29,7 +29,7 @@ export default function createApp() {
       origin: env.ALLOWED_ORIGINS?.split(",") || "",
       allowHeaders: ["Authorization", "Content-Type"],
       allowMethods: ["GET", "POST", "OPTIONS", "DELETE", "PATCH", "PUT"],
-      credentials: true, // jika kamu butuh cookie, credentials, dsb.
+      credentials: true,
     }),
   );
 

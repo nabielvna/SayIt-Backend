@@ -29,7 +29,7 @@ const MessageSchema = z.object({
 export const createChat = createRoute({
   tags,
   method: "post",
-  path: "/chat",
+  path: "/ai-chat",
   security: [{ bearerAuth: [] }],
   request: {
     body: {
@@ -88,7 +88,7 @@ export const createChat = createRoute({
 export const listChats = createRoute({
   tags,
   method: "get",
-  path: "/chat",
+  path: "/ai-chat",
   security: [{ bearerAuth: [] }],
   responses: {
     [HttpStatusCode.OK]: {
@@ -136,7 +136,7 @@ export const listChats = createRoute({
 export const getChatDetails = createRoute({
   tags,
   method: "get",
-  path: "/chat/:id",
+  path: "/ai-chat/:id",
   security: [{ bearerAuth: [] }],
   request: {
     params: z.object({
@@ -192,7 +192,7 @@ export const getChatDetails = createRoute({
 export const sendMessage = createRoute({
   tags,
   method: "post",
-  path: "/chat/:id/message",
+  path: "/ai-chat/:id/message",
   security: [{ bearerAuth: [] }],
   request: {
     params: z.object({
@@ -259,7 +259,7 @@ export const sendMessage = createRoute({
 export const updateChat = createRoute({
   tags,
   method: "patch",
-  path: "/chat/:id",
+  path: "/ai-chat/:id",
   security: [{ bearerAuth: [] }],
   request: {
     params: z.object({
@@ -322,7 +322,7 @@ export const updateChat = createRoute({
 export const deleteChat = createRoute({
   tags,
   method: "delete",
-  path: "/chat/:id",
+  path: "/ai-chat/:id",
   security: [{ bearerAuth: [] }],
   request: {
     params: z.object({

@@ -6,7 +6,7 @@ import index from "@/routes/index.route";
 import demo from "@/routes/demo/demo.index";
 import clerk from "@/routes/webhooks/clerk/clerk.index";
 import user from "@/routes/user/user.index";
-import chat from "@/routes/chat/chat.index";
+import chat from "@/routes/ai-chat/ai-chat.index";
 import notes from "@/routes/notes/notes.index";
 
 const app = createApp();

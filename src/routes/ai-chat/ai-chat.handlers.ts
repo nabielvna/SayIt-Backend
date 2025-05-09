@@ -6,7 +6,7 @@ import type {
   ListChatsRoute,
   SendMessageRoute,
   UpdateChatRoute,
-} from "./chat.routes";
+} from "./ai-chat.routes";
 import db from "@/db/index";
 import { ai_chats, ai_messages, MessageType } from "@/db/schema";
 import { and, count, desc, eq, isNull } from "drizzle-orm";

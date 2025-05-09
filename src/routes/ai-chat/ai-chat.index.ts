@@ -1,8 +1,8 @@
 import { createRouter } from "@/lib/create-app";
 import { authMiddleware } from "@/middlewares/auth";
 
-import * as handlers from "./chat.handlers";
-import * as routes from "./chat.routes";
+import * as handlers from "./ai-chat.handlers";
+import * as routes from "./ai-chat.routes";
 
 const router = createRouter();
 
