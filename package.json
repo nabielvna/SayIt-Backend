@@ -5,24 +5,33 @@
   "scripts": {
     "dev": "bun run --hot src/index.ts",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "db:seed": "bun run src/db/seed/seed.ts"
   },
   "dependencies": {
     "@clerk/backend": "^1.29.2",
     "@google/genai": "^0.10.0",
     "@hono/zod-openapi": "^0.19.5",
     "@scalar/hono-api-reference": "^0.8.3",
+    "date-fns": "^4.1.0",
     "dotenv": "^16.5.0",
     "dotenv-expand": "^12.0.2",
     "drizzle-orm": "^0.42.0",
     "eslint-plugin-import": "^2.31.0",
+    "follow-redirects": "^1.15.9",
     "hono": "^4.7.7",
     "hono-pino": "^0.8.0",
+    "midtrans-client": "^1.4.3",
+    "midtrans-node": "^1.1.5",
+    "midtrans-node-client": "^0.0.6",
+    "nodejs-base64-encode": "^1.1.0",
     "pg": "^8.15.1",
     "pino": "^9.6.0",
     "pino-pretty": "^13.0.0",
     "postgres": "^3.4.5",
     "svix": "^1.64.1",
+    "tiktoken": "^1.0.21",
+    "uuid": "^11.1.0",
     "zod": "^3.24.3"
   },
   "devDependencies": {

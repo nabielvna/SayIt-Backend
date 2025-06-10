@@ -13,6 +13,8 @@ const EnvSchema = z.object({
   DATABASE_URL: z.string().url(),
   CLERK_SECRET_KEY: z.string(),
   CLERK_WEBHOOK_SIGNING_SECRET: z.string(),
+  MIDTRANS_CLIENT_KEY: z.string(),
+  MIDTRANS_SERVER_KEY: z.string(),
   GEMINI_API_KEY: z.string(),
   ALLOWED_ORIGINS: z.string().optional(),
 });
